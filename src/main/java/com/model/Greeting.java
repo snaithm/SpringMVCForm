@@ -1,8 +1,9 @@
-package com.hello;
+package com.model;
 
 public class Greeting {
 
     private String name;
+
     private String message;
 
     public String getName() {
