@@ -1,4 +1,4 @@
-package com.hello;
+package com;
 
 import com.model.Greeting;
 import org.springframework.stereotype.Controller;
