@@ -21,7 +21,7 @@ public class GreetingController {
     @PostMapping("/greeting")
     public ModelAndView greetingSubmit(@ModelAttribute Greeting greeting) {
 
-        greeting.setName(greeting.getName() + " is a user");
+        greeting.setName(greeting.getName() + " is now a  registered user");
         return new ModelAndView("result", "m", greeting);
     }
 }
