@@ -20,6 +20,7 @@ public class GreetingController {
 
     @PostMapping("/greeting")
     public ModelAndView greetingSubmit(@ModelAttribute Greeting greeting) {
+        greeting.setName("User " + greeting.getName());
         return new ModelAndView("result", "m", greeting);
     }
 }
