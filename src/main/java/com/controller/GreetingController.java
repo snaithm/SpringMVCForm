@@ -1,4 +1,4 @@
-package com;
+package com.controller;
 
 import com.model.Greeting;
 import org.springframework.stereotype.Controller;
@@ -20,7 +20,8 @@ public class GreetingController {
 
     @PostMapping("/greeting")
     public ModelAndView greetingSubmit(@ModelAttribute Greeting greeting) {
-        greeting.setName("User " + greeting.getName());
+
+        greeting.setName(greeting.getName() + " is a user");
         return new ModelAndView("result", "m", greeting);
     }
 }
